@@ -15,8 +15,7 @@
     </header>
     <section>
         <form action="" method="post">
-            <fieldset>
-                <!-- DADOS PESSOAIS -->
+            <!-- <fieldset>
                 <legend>Dados pessoais</legend>
                 <label for="userName">Nome</label>
                 <input type="text" name="userName" id="userName" required>
@@ -37,7 +36,22 @@
                 <label for="userImage">Upload de foto</label>
                 <input type="file" accept="image/*" name="userImage">
                 <br />
+            </fieldset> -->
+
+            <fieldset>
+                <!-- PERFIL -->
+                <legend>Perfil</legend>
+                <p>Gênero:</p>
+                <input type="radio" name="userGender" value="feminino">
+                <label for="userGender">Feminino</label>
+
+                <input type="radio" name="userGender" value="masculino">
+                <label for="userGender">Masculino</label>
+
+                <input type="radio" name="userGender" value="notInformed">
+                <label for="userGender">Prefiro não informar</label>
             </fieldset>
+
             <button type="submit">Enviar</button>
         </form>
     </section>
